@@ -60,15 +60,18 @@ a{
     margin: 0 auto;
     padding: 20px 10px;
   }
-  
   .gallery img {
     width: 100%;
     max-width: 170px;
     height: 150px;
-
     object-fit: cover;
     border-radius: 10px;
-  }
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: translateY(-5px); /* Move the image up by 5px when hovered */
+}
 
   .gallery p{
     font-size: 16px;
@@ -79,7 +82,11 @@ a{
     margin-left: 30px;
     margin-right: 0;
     margin-bottom: 0;
+    transition: transform 0.3s;
   }
+  .gallery p:hover {
+    transform: translateY(-5px); /* Move the image up by 5px when hovered */
+}
 
   .gallery button{
     border-radius: 20%;
@@ -115,15 +122,60 @@ a{
     transform: scale(0.95); 
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
+.btnComprar:active {
+  background-color: rgb(79, 100, 30);
+}
 
+ .btnMenu {
+  background-color: rgb(229, 133, 231);
+  text-align: center;
+  width:100px;
+  height:30px;
+  /* padding: 10px 70px;
+  margin-left: 20%; */
+  display: inline-block;
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 2px 2px 4px rgba(30, 11, 27, 0.2);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(79, 22, 72);
+  font-size: 16px;
+}
+.btnMenu:hover {
+  transform: scale(0.95); 
+  box-shadow: 4px 4px 6px rgba(131, 78, 114, 0.3);
+}
+.btnMenu:active {
+background-color: rgb(25, 16, 45);
+}
   .producto{
     margin:0;
     padding:0;
   }
 
-  .producto button{
-    /* padding-left:100px;
-    margin-left: 20%; */
+
+  .menu p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(191, 146, 197);
+    text
   }
 
-  
+  .image-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-image: url('search.png'); /* Path to your image */
+    background-size: contain; /* Use 'contain' to fit the image within the button */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image within the button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.image-button:hover {
+    background-color: #3498db;
+}
