@@ -6,6 +6,7 @@ a{
     padding-left: 20px;
 }
 
+
 .banner{
     max-width: 60%;
     max-height: 60%;
@@ -30,10 +31,10 @@ a{
 }
 
 .blue{
-    background-color: rgb(43, 101, 226);
+    background-color:linear-gradient(0deg,rgb(43, 101, 226) 80%,rgb(34, 48, 79) 100%)  ;
 }
 .red{
-    background-color: rgb(226, 43, 43);
+    background-color:linear-gradient(0deg,rgb(226, 43, 43) 80%,rgb(79, 34, 34) 20%)  ;
 }
 .green{
     background-color: rgb(43, 226, 43);
@@ -80,10 +81,11 @@ a{
     margin-bottom: 0;
   }
 
-  button{
+  .gallery button{
     border-radius: 20%;
     margin:0;
-    max-width:3.9px;
+    max-width:34.9px;
+    min-width:24.9px;
     max-height:3.9px;
     padding-bottom: 30px;
     text-align: center;
@@ -92,12 +94,27 @@ a{
 
   .redC{
     background-color: rgb(209, 72, 72);
-    margin-left: 60px;
+    margin-left: 60px;  
   }
+  
 
-  .blueC{
-    background-color: rgb(133, 231, 146);
-  }
+  .btnComprar {
+    background-color: rgb(205, 231, 133);
+    text-align: center;
+    padding: 10px 70px;
+    margin-left: 20%;
+    display: inline-block;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(77, 79, 22);
+    font-size: 16px;
+}
+
+.btnComprar:hover {
+    transform: scale(0.95); 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
 
   .producto{
     margin:0;
@@ -105,5 +122,8 @@ a{
   }
 
   .producto button{
-    padding-left:40px;
+    /* padding-left:100px;
+    margin-left: 20%; */
   }
+
+  
