@@ -80,15 +80,28 @@ a{
     margin: 0 auto;
     padding: 20px 10px;
   }
+  .galleryS img {
+    width: 100%;
+    max-width: 40px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    min-width: 1px;
+    min-height: 1px;
+}
   .gallery img {
     width: 100%;
-    max-width: 170px;
+    max-width: 400px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s;
+    min-width: 1px;
+    min-height: 1px;
 }
 
+.chiquito:hover,
 .gallery img:hover {
     transform: translateY(-5px); /* Move the image up by 5px when hovered */
 }
@@ -118,7 +131,25 @@ a{
     text-align: center;
     border:0;
   }
+  .discounts, .categories {
+    margin: 20px auto;
+    text-align: center;
+}
 
+.discounts h2, .categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categories {
+    margin-top: 40px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
   .redC{
     background-color: rgb(209, 72, 72);
     margin-left: 60px;  
@@ -142,6 +173,8 @@ a{
     transform: scale(0.95); 
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+.chiquito:active,
 .btnComprar:active {
   background-color: rgb(79, 100, 30);
 }
@@ -171,12 +204,17 @@ background-color: rgb(25, 16, 45);
     margin:0;
     padding:0;
   }
+  .productoG{
+    margin:0;
+    padding:0;
+    width: 29%;
+    border-radius: 50%;
+  }
 
 
   .menu p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:rgb(191, 146, 197);
-    text
   }
 
   .image-button {
@@ -205,6 +243,17 @@ footer-content{
   font-weight: 20;
   margin-left: 40%;
 }
+.letra{
+  font-size: medium;
+  margin:0;
+  color:rgb(84, 51, 80);
+  font-family: fantasy;
+  text-align: justify;
+  align-self: center;
+  margin: 20px auto;
+  text-align: center; 
+  text-shadow: 4px 4px 6px rgba(131, 78, 114, 0.3);
+}
 .letrita{
   font-size: x-small;
   margin:0;
@@ -213,4 +262,20 @@ footer-content{
   text-align: justify;
   align-self: center;
   
+}
+.letritaB{
+  font-size: smaller;
+  margin:0;
+  color:rgb(96, 88, 133);
+  font-family: fantasy;
+  text-align: justify;
+  align-self: center;
+  
+}
+.wider-image {
+  width: 300px; /* Adjust the width as needed */
+}
+.chiquito{
+  width:80px;
+  height: 60px;
 }
