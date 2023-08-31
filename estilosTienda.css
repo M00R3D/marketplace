@@ -7,15 +7,35 @@ a{
 }
 
 
-.banner{
-    max-width: 60%;
-    max-height: 60%;
-    padding-left: 19%;
+.banner {
+  max-width: 60%;
+  max-height: 60%;
+  padding-left: 19%;
+  display: inline;
 }
 
-.bannerBack{
-    background-color: rgb(114, 67, 94);
+.bannerBack {
+  background-color: rgb(114, 67, 94);
+  overflow: hidden; /* Hide overflow content */
 }
+
+.banner-container {
+  display: flex;
+  animation: rotateBanner 30s infinite linear; /* Adjust the duration as needed */
+}
+
+@keyframes rotateBanner {
+  0%, 100% { transform: translateX(0%); }
+  25% { transform: translateX(-50%); }
+  50% { transform: translateX(-100%); }
+  75% { transform: translateX(-150%); }
+  99% { transform: translateX(-200%); }
+}
+
+
+
+
+
 
 .logo{
     width: 56px;
@@ -178,4 +198,19 @@ background-color: rgb(25, 16, 45);
 
 .image-button:hover {
     background-color: #3498db;
+}
+
+footer-content{
+  font-size: 10px;
+  font-weight: 20;
+  margin-left: 40%;
+}
+.letrita{
+  font-size: x-small;
+  margin:0;
+  color:rgb(126, 101, 123);
+  font-family: fantasy;
+  text-align: justify;
+  align-self: center;
+  
 }
